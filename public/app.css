@@ -32,13 +32,18 @@ header {
 }
 
 header h1 {
-	background: #2980b9;
+	//background: #2980b9;
 	color: white;
-	margin: 0;
+	margin: 50px 50px 0 50px;
 	padding: 10px 20px;
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: normal;
+}
+
+header h2 {
+        margin-top: 0;
+	opacity: 0.3;
 }
 
 ul {
@@ -55,19 +60,23 @@ li {
 }
 
 span {
-	float: right;
+	float: relative;
 	background: #e74c3c;
 	height: 40px;
 	margin-right: 20px;
 	text-align: center;
+        text-transform: lowercase;
 	color: white;
+        font-weight: bolder;
 	width: 0px;
 	display: inline-block;
 	transition: all 0.3s linear;
-	opacity: 0;
+	opacity: 1;
 }
 
 input {
+        //margin: 100px 0 0 0;
+        margin-top: 100px;
 	font-size: 18px;
 	color: #2980b9;
 	background-color: #f7f7f7;
@@ -85,6 +94,10 @@ li:nth-child(2n){
 li:hover span {
 	width: 40px;
 	opacity: 1.0;
+}
+
+li span {
+	float: right;
 }
 
 input:focus{
